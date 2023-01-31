@@ -1,0 +1,178 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 181, 181);
+    margin: auto;
+    
+}
+.child1 {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.child1a {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(122, 41, 41);
+    margin: 0 5px;
+}
+
+.child1b {
+    height: 100%;
+    width: 75%;
+    background-color: rgb(39, 43, 102);
+    margin: 0 5px;
+}
+
+.child2 {
+    width: 592px;
+    height: 200px;
+    display: flex;
+    background-color: rgb(168, 147, 10);
+    margin: 20px auto;
+}
+
+.child3 {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.child3a {
+    height: 100%;
+    width: 200px;
+    background-color: greenyellow;
+    margin: 0 5px;
+}
+
+.child3b {
+    height: 100%;
+    width: 200px;
+    background-color: purple;
+    margin: 0 5px;
+
+}
+
+.child3c {
+    height: 100%;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 0 5px;
+}
+
+.child4 {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    margin: 20px auto;
+}
+
+.child4a {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(143, 97, 12);
+    margin: 0 5px;
+}
+
+.child4b {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(248, 222, 25);
+    margin: 0 5px;
+}
+
+.child5 {
+    width: 600px;
+    height: 25px;
+    display: flex;
+    margin: 20px auto;
+    display: flex;
+}
+
+.child5a {
+    width: 25%;
+    height: 100%;
+    background-color: green;
+    margin: 0 5px;
+}
+
+.child5b {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(51, 96, 122);
+    margin: 0 5px;
+}
+
+.child5c {
+    width: 25%;
+    height: 100%;
+    background-color: brown;
+    margin: 0 5px;
+}
+
+.child5d {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(7, 7, 111);
+    margin: 0 5px;
+}
+
+.child6 {
+    width: 592px;
+    height: 20px;
+    background-color: black;
+    margin: 20px auto;
+    
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .parent {
+        background-color: white;
+    }
+    [class^=child] {
+        width: 100%;
+        padding: 0;
+    }
+    [class^=child3] {
+        flex-direction: column;
+        gap: 20px;
+        width: 100vmin;
+        height: 30vh;
+    }
+    [class^=child4] {
+        flex-direction: column;
+        gap: 20px;
+        width: 100vmin;
+        height: 30vh;
+    }
+    .class5a,.child5b {
+        flex-direction: row;
+        gap: 20px;
+        flex-grow: 10;
+        max-width: 200vmin;
+        max-height: 30vh;
+    }
+    .class5c,.child5d {
+        flex-direction: row;
+        flex-grow: 10;
+        gap: 20px;
+        width: 100vmin;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .parent {
+        background-color: white;
+    }
+    [class^=child] {
+        flex-direction: column;
+        width: 100vmin;
+        height: 30vmin;
+        align-items: center;
+        gap:20px;
+    }
+}
