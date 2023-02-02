@@ -1,0 +1,18 @@
+* {
+    border: 0;
+    margin: 0;
+    background-color: rgb(237, 231, 231);
+}
+.main {
+    width: 800px;
+    height: 800px;
+}
+#image {
+    /* transform: translate(); */
+    position: absolute;
+    top: calc(100% - 60%);
+    left: calc(100% - 10%);
+    width: 100px;
+    height: 100px;
+    
+    }
