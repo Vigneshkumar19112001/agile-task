@@ -1,0 +1,62 @@
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .parent {
+        background-color: white;
+    }
+    [class^=child] {
+        width: 100%;
+        flex-direction: column;
+        width: 100vmin;
+        height: 30vmin;
+        align-items: center;
+        gap:20px;
+    }
+    .child5.a,.child5.b,.child5.c,.child5.d{
+        width: 100vw;
+    }
+    .child6 {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .parent {
+        background-color: white;
+    }
+    [class^=child] {
+        width: 100%;
+    }
+    [class^=child3] {
+        flex-direction: column;
+        gap: 20px;
+        width: 100vmin;
+        height: 20vh;
+    }
+    [class^=child4] {
+        flex-direction: column;
+        gap: 20px;
+        width: 100vmin;
+        height: 20vh;
+    }
+    .child5 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        gap: 10px;
+        margin-bottom: 45px;
+    }
+    .child5.a,.child5.b {
+        width: 47%;
+        height: 20px;
+    }
+    .child5.c,.child5.d {
+        width: 47%;
+        height: 20px;
+        
+    }
+    .child6 {
+        width: 100%;
+        bottom: 10px;
+        margin-top: 10px;
+    }
+}

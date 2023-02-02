@@ -1,3 +1,4 @@
+
 .parent {
     width: 100%;
     height: 100vh;
@@ -87,34 +88,33 @@
 
 .child5 {
     width: 600px;
-    height: 25px;
-    display: flex;
+    height: 20px;
     margin: 20px auto;
     display: flex;
 }
 
-.child5a {
+.child5.a {
     width: 25%;
     height: 100%;
     background-color: green;
     margin: 0 5px;
 }
 
-.child5b {
+.child5.b {
     width: 25%;
     height: 100%;
     background-color: rgb(51, 96, 122);
     margin: 0 5px;
 }
 
-.child5c {
+.child5.c {
     width: 25%;
     height: 100%;
     background-color: brown;
     margin: 0 5px;
 }
 
-.child5d {
+.child5.d {
     width: 25%;
     height: 100%;
     background-color: rgb(7, 7, 111);
@@ -123,56 +123,9 @@
 
 .child6 {
     width: 592px;
-    height: 20px;
+    height: 5%;
     background-color: black;
     margin: 20px auto;
+    padding: 0;
     
-}
-@media screen and (max-width: 768px) and (min-width: 481px) {
-    .parent {
-        background-color: white;
-    }
-    [class^=child] {
-        width: 100%;
-        padding: 0;
-    }
-    [class^=child3] {
-        flex-direction: column;
-        gap: 20px;
-        width: 100vmin;
-        height: 30vh;
-    }
-    [class^=child4] {
-        flex-direction: column;
-        gap: 20px;
-        width: 100vmin;
-        height: 30vh;
-    }
-    .class5a,.child5b {
-        flex-direction: row;
-        gap: 20px;
-        flex-grow: 10;
-        max-width: 200vmin;
-        max-height: 30vh;
-    }
-    .class5c,.child5d {
-        flex-direction: row;
-        flex-grow: 10;
-        gap: 20px;
-        width: 100vmin;
-        height: 30vh;
-    }
-}
-
-@media screen and (max-width: 480px) and (min-width: 320px) {
-    .parent {
-        background-color: white;
-    }
-    [class^=child] {
-        flex-direction: column;
-        width: 100vmin;
-        height: 30vmin;
-        align-items: center;
-        gap:20px;
-    }
 }
