@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4 Boxes with Different Colors</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			display: inline-block;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		.red {
+			background-color: red;
+		}
+		.blue {
+			background-color: blue;
+		}
+		.green {
+			background-color: green;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box red" onclick="hideBox(this)"></div>
+	<div class="box blue" onclick="hideBox(this)"></div>
+	<div class="box green" onclick="hideBox(this)"></div>
+	<div class="box yellow" onclick="hideBox(this)"></div>
+	<script>
+		// declaring a previousBox to store a hide box
+		var previousBox = null;
+		
+		// hideBox fuction will hide and display box
+		// (this) is used to get the box content value
+		function hideBox(box2) {
+			if (previousBox !== null) {
+				previousBox.style.display = "inline-block";
+			}
+			box2.style.display = "none";
+			previousBox = box2;
+            // console.log(previousBox);
+		}
+	</script>
+</body>
+</html>

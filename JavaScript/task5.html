@@ -28,14 +28,12 @@
       // Get all the list items
       const listItems = familyList.getElementsByTagName('li');
 		console.log(listItems)
-      //click event listener 
+      // Add click event listener to each list item
       for (let i = 0; i < listItems.length; i++) {
 		const listItem = listItems[i];
 		console.log(listItem);
-		const textLength = listItem.textContent.length;
-		console.log(textLength);
         listItems[i].addEventListener('click', function() {
-          if (textLength % 2 === 0) {
+          if (i % 2 === 0) {
             listItems[i].classList.add('even');
           } else {
             listItems[i].classList.add('odd');

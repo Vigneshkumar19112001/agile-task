@@ -1,9 +1,10 @@
 .main {
     width: 700px;;
-    height: auto;
+    height: 700px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: antiquewhite;
     padding: 20px;
+    margin: 0 auto;
 }
 
 img {
