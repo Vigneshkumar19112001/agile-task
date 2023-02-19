@@ -23,10 +23,12 @@
     
     <script>
         let answer="";
+        // using querySelector selecting all the div tag
         let content = document.querySelectorAll('#content');
+        // forEach to iterate over all the div
         content.forEach((div) => {
           div.addEventListener('click', () => {
-            const content = div.innerHTML;
+            content = div.innerHTML;
             answer += content +",  ";
             alert(answer);
           });
