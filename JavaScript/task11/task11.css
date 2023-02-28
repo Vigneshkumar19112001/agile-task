@@ -60,3 +60,9 @@ span {
 ::-ms-input-placeholder { /* Microsoft Edge */
    color: white;
 }
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
