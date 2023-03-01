@@ -1,4 +1,4 @@
-let form = document.querySelector(".needs-validation");
+let form = document.querySelector(".needs-validation"); 
 let result = document.querySelector(".modal-body");
 
 form.addEventListener('submit', (event) => {
